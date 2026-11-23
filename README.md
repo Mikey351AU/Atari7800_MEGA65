@@ -74,7 +74,10 @@ mega65-tools `bit2core`: magic `MEGA65BITSTREAM0`, name `Atari7800`, version `V0
 * No critical warnings in synthesis or implementation; all 10 `$readmemh` init files read
   successfully; no block RAM demoted to LUTs.
 * Block RAM 240 of 365 tiles (66%), LUTs 21%, DSP 62.
-* Tested on a MEGA65 R6 (see Status). R3/R4/R5 not built. No virtual drives, so the M2M V2.0.1
+* **R3/R3A:** V0.3 built 2026-11-23 (`release/a7800_r3.cor`, target `mega65r3`, model id 0x03):
+  timing met (WNS +0.377 ns), no critical warnings, 240/365 BRAM tiles. **Not tested on
+  hardware.**
+* Tested on a MEGA65 R6 (see Status). R4/R5 not built. No virtual drives, so the M2M V2.0.1
   template bugs #58/#52/#57 do not apply.
 
 Project layout
@@ -209,7 +212,7 @@ Known limitations / TODO
 * Max. 512 KB cartridges (MiSTer: 1 MB). The released MiSTer core has no ARM (DPC+/CDF/BUS) games.
 * No light gun, trakball, mice, keypads, SaveKey; no saving of high scores.
 * HDMI: M2M's 4:3 window, no MiSTer-style aspect ratio per border/overscan setting.
-* R3/R4/R5 projects exist but were not built.
+* R4/R5 projects exist but were not built; the R3 core is built but not tested.
 
 License
 -------
